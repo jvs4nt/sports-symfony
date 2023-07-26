@@ -1,0 +1,68 @@
+{% extends 'cadastro.html.twig' %}
+
+{% block body %}
+<div class="profile-authentication-area">
+            <div class="container">
+                <div class="row register">
+                    <!-- <div class="col-lg-6 col-md-12">
+                        <div class="profile-authentication-image">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <div class="content-image">
+                                        <div class="logo">
+                                            <a href="index.html"><img src="tema/zust/assets/images/logo.png" alt="Zust"></a>
+                                        </div>
+                                        <div class="vector-image">
+                                            <img src="tema/zust/assets/images/vector.png" alt="image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+    
+                    <div class="col-lg-6 col-md-12 register-formulario">
+                        <div class="register-form">
+                            <h2 style="color: aliceblue;">Registrar</h2>
+        
+                            <form>
+                                <div class="form-group">
+                                    <label>Nome</label>
+                                    <input style="background-color: black; border:none;" type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input style="background-color: black; border:none;" type="email" class="form-control">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label>Senha</label>
+                                    <input style="background-color: black; border:none;" type="password" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Confirmar Senha</label>
+                                    <input style="background-color: black; border:none;" type="password" class="form-control">
+                                </div>
+        
+                                <div class="remember-me-wrap">
+                                    <p>
+                                        <input type="checkbox" id="test1">
+                                        <label for="test1">Eu aceito os <a href="privacy.html">Termos e Condições</a></label>
+                                    </p>
+                                </div>
+                                <button type="submit" class="default-btn">Registrar</button>
+                                <a href="/login" type="button" class="default-btn">Voltar</a>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-btn-icon">
+                <a href="index.html"><i class="flaticon-home"></i></a>
+            </div>
+        </div>
+{% endblock %}

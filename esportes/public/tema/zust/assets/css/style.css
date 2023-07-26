@@ -41,7 +41,7 @@ Default CSS
 :root {
   --main-font-family: 'Open Sans', sans-serif;
   --heading-font-family: 'Montserrat', sans-serif;
-  --main-color: #3644D9;
+  --main-color: #129336;
   --optional-color: #2E3AB8;
   --white-color: #ffffff;
   --black-color: #515355;
@@ -62,6 +62,7 @@ a {
   transition: var(--transition);
   color: var(--black-color);
   display: inline-block;
+  text-align: center;
 }
 
 a:hover, a:focus {
@@ -89,6 +90,7 @@ p:last-child {
 i {
   line-height: normal;
 }
+
 
 .d-table {
   width: 100%;
@@ -118,11 +120,33 @@ img {
 /*================================================
 Main Content Wrapper Area CSS
 =================================================*/
+
+.login {
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.login-formulario {
+  background-color: #000;
+}
+
+.register {
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.register-formulario {
+  background-color: #000;
+}
+
 .main-content-wrapper {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   overflow: hidden;
-  background-color: #F4F7FC;
+  background-color: black;
   min-height: 100vh;
   padding-top: 100px;
   padding-left: 175px;
@@ -198,7 +222,7 @@ Main Content Wrapper Area CSS
   height: 50px;
   border: none;
   border-radius: 50px;
-  background-color: #2E3AB8;
+  background-color: #1b1c1c;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   color: var(--white-color);
@@ -1042,7 +1066,7 @@ Main Content Wrapper Area CSS
   line-height: 35px;
   text-align: center;
   border-radius: 50px;
-  background-color: var(--white-color);
+  background-color: black;
   color: var(--main-color);
 }
 
@@ -2358,7 +2382,7 @@ Sidemenu Area CSS
   height: 100%;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
-  background: var(--white-color);
+  background-color: black;
   overflow: hidden;
 }
 
@@ -2392,7 +2416,7 @@ Sidemenu Area CSS
   height: 30px;
   width: 30px;
   line-height: 35px;
-  background-color: #F4F7FC;
+  background-color: black;
   color: var(--black-color);
   font-size: 18px;
   text-align: center;
@@ -2423,7 +2447,7 @@ Sidemenu Area CSS
 }
 
 .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item.active .nav-link .icon, .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item:hover .nav-link .icon {
-  color: var(--white-color);
+  color: var(--black-color);
   background-color: var(--main-color);
 }
 
@@ -2453,8 +2477,8 @@ Sidemenu Area CSS
   height: 45px;
   width: 45px;
   line-height: 50px;
-  background-color: #737ef5;
-  color: var(--white-color);
+  background-color: var(--main-color);
+  color: white;
   font-size: 20px;
   position: relative;
   top: unset;
@@ -2463,7 +2487,7 @@ Sidemenu Area CSS
 }
 
 .sidemenu-area.active-sidemenu-area .sidemenu-body .sidemenu-nav .nav-item .nav-link::before {
-  background-color: var(--white-color);
+  background-color: var(--black-color);
   left: -20px;
 }
 
@@ -2473,7 +2497,7 @@ Sidemenu Area CSS
 
 .sidemenu-area.active-sidemenu-area .sidemenu-body .sidemenu-nav .nav-item.active .nav-link .icon, .sidemenu-area.active-sidemenu-area .sidemenu-body .sidemenu-nav .nav-item:hover .nav-link .icon {
   color: var(--main-color);
-  background-color: var(--white-color);
+  background-color: var(--black-color);
 }
 
 .sidemenu-area.active-sidemenu-area .sidemenu-body .sidemenu-nav .nav-item.active .nav-link::before, .sidemenu-area.active-sidemenu-area .sidemenu-body .sidemenu-nav .nav-item:hover .nav-link::before {
@@ -2496,7 +2520,7 @@ Right Sidebar Area CSS
   transition: var(--transition);
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
-  background: var(--white-color);
+  background: black;
   padding: 15px;
   max-height: calc(100% - 80px);
 }
@@ -2582,7 +2606,7 @@ Right Sidebar Area CSS
   height: 40px;
   border: none;
   border-radius: 5px;
-  background-color: #F4F7FC;
+  background-color: #1b1c1c;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   color: var(--paragraph-color);
@@ -4959,7 +4983,7 @@ Setting Area CSS
 =================================================*/
 .account-setting-list-tabs {
   margin-top: 25px;
-  background-color: var(--white-color);
+  background-color: #1b1b1b;
   padding: 35px;
   text-align: center;
   border-radius: 5px;
@@ -5013,7 +5037,7 @@ Setting Area CSS
 }
 
 .account-setting-form {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 45px;
   margin-top: 25px;
   border-radius: 5px;
@@ -8117,10 +8141,10 @@ Profile Authentication Area CSS
 .profile-authentication-area {
   padding-top: 150px;
   padding-bottom: 150px;
-  background-image: url(../../assets/images/profile-authentication-bg.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url(../../assets/images/profile-authentication-bg.jpg); */
+  background-color: black; 
+  background-position: center;
+  background-size:100%;
   height: 100%;
   width: 100%;
   position: relative;
@@ -8142,7 +8166,7 @@ Profile Authentication Area CSS
   height: 55px;
   width: 55px;
   line-height: 58px;
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   color: var(--main-color);
   text-align: center;
   border-radius: 50px;
@@ -8178,6 +8202,9 @@ Profile Authentication Area CSS
 .login-form {
   background: var(--white-color);
   padding: 65px 45px;
+  background-color:#1b1c1c;
+  
+
 }
 
 .login-form h2 {
@@ -8336,7 +8363,7 @@ Profile Authentication Area CSS
   color: var(--paragraph-color);
 }
 
-.login-form form .lost-your-password-wrap a::before {
+/* .login-form form .lost-your-password-wrap a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -8345,8 +8372,8 @@ Profile Authentication Area CSS
   content: '';
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  background-color: #eeeeee;
-}
+  background-color: blue;
+} */
 
 .login-form form .lost-your-password-wrap a::after {
   width: 0;
@@ -8382,11 +8409,11 @@ Profile Authentication Area CSS
 }
 
 .login-form form .default-btn:hover {
-  background: #FF3E30;
+  background: #022707;
 }
 
 .login-form form .google-btn {
-  background-color: #FF3E30;
+  background-color: #04400b;
   color: var(--white-color);
   border: none;
   display: inline-block;
@@ -8398,7 +8425,7 @@ Profile Authentication Area CSS
 }
 
 .login-form form .google-btn:hover {
-  background: var(--main-color);
+  background: #022707;
 }
 
 .login-form form .or-text {
@@ -8415,6 +8442,7 @@ Profile Authentication Area CSS
 .register-form {
   background: var(--white-color);
   padding: 65px 45px;
+  background-color: #1b1c1c;
 }
 
 .register-form h2 {
@@ -8574,7 +8602,7 @@ Profile Authentication Area CSS
 }
 
 .register-form form .default-btn:hover {
-  background: #FF3E30;
+  background: #022707;
 }
 
 .register-form form .google-btn {
@@ -8698,7 +8726,7 @@ Profile Authentication Area CSS
 }
 
 .forgot-password-form form .default-btn:hover {
-  background: #FF3E30;
+  background: #022707;
 }
 
 .page-banner-box {

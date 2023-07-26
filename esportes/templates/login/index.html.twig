@@ -3,8 +3,8 @@
 {% block body %}
 <div class="profile-authentication-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                <div class="row login">
+                    <!-- <div class="col-lg-6 col-md-12">
                         <div class="profile-authentication-image">
                             <div class="content-image">
                                 <div class="logo">
@@ -15,36 +15,36 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
     
-                    <div class="col-lg-6 col-md-12">
-                        <div class="login-form">
-                            <h2>Login</h2>
+                    <div class="col-lg-6 col-md-12 login-formulario">
+                        <div class="login-form" style="background-color: #1b1c1c">
+                            <h2 style="color: aliceblue;">Login</h2>
         
-                            <form>
+                            <form id="formulario-login">
                                 <div class="form-group">
-                                    <label>Username or email</label>
-                                    <input type="text" class="form-control">
+                                    <label>Email</label>
+                                    <input style="background-color: black; border:none;" id="email" name="email" type="text" class="form-control">
                                 </div>
         
                                 <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control">
+                                    <label>Senha</label>
+                                    <input style="background-color: black; border:none;" id="senha" name="senha" type="password" class="form-control">
                                 </div>
         
                                 <div class="remember-me-wrap d-flex justify-content-between align-items-center">
                                     <p>
                                         <input type="checkbox" id="test1">
-                                        <label for="test1">Remember me</label>
+                                        <label for="test1">Lembrar senha</label>
                                     </p>
         
                                     <div class="lost-your-password-wrap">
-                                        <a href="forgot-password.html" class="lost-your-password">Forgot password ?</a>
+                                        <a href="forgot-password.html" class="lost-your-password">Esqueceu sua senha?</a>
                                     </div>
                                 </div>
-                                <button type="submit" class="default-btn">Login</button>
-                                <div class="or-text"><span>Or</span></div>
-                                <button type="submit" class="google-btn">Log In with Google</button>
+                                <button style="margin-bottom: 15px;" onclick="exibirDados()" type="button" class="default-btn">Login</button>
+                            
+                                <a href="/cadastro" type="button" class="google-btn">Cadastre-se</a>
                             </form>
                         </div>
                     </div>
@@ -55,4 +55,16 @@
                 <a href="index.html"><i class="flaticon-home"></i></a>
             </div>
         </div>
+
+        <script>
+            function exibirDados() {
+               
+                var email = document.getElementById('email').value;
+                var senha = document.getElementById('senha').value;
+
+                console.log('Email:', email);
+                console.log('Senha:', senha);
+
+            }
+        </script>
 {% endblock %}
