@@ -15,4 +15,12 @@ class LoginController extends AbstractController
             'controller_name' => 'LoginController',
         ]);
     }
+
+    #[Route('/password', name: 'app_password')]
+    public function forgotPassword(): Response
+    {
+        return $this->render('login/password.html.twig', [
+            'controller_name' => 'LoginController',
+        ]);
+    }
 }
