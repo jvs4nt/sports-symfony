@@ -2732,6 +2732,7 @@ Widget Area CSS
 .widget-area .widget .widget-title {
   margin-bottom: 25px;
   font-size: var(--font-size);
+  color: var(--white-color)
 }
 
 .widget-area .widget-view-profile {
@@ -3325,6 +3326,7 @@ News Feed Area CSS
 .news-feed-area .news-feed .news-feed-title {
   margin-bottom: 25px;
   font-size: var(--font-size);
+  color: var(--white-color);
 }
 
 .news-feed-area .news-feed-form {
@@ -3336,8 +3338,8 @@ News Feed Area CSS
 }
 
 .news-feed-area .news-feed-form form .form-group .form-control {
-  background-color: #F4F7FC;
-  border: 1px solid #F4F7FC;
+  background-color: #000;
+  border: 1px solid grey;
   padding: 15px 25px;
   color: var(--paragraph-color);
   font-size: 13px;
@@ -8791,7 +8793,7 @@ Profile Authentication Area CSS
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
 }
 
 .copyrights-area p {
