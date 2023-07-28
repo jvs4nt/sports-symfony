@@ -60,7 +60,7 @@ a {
   text-decoration: none;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  color: var(--black-color);
+  color: var(--white-color);
   display: inline-block;
   text-align: center;
 }
@@ -2825,7 +2825,7 @@ Widget Area CSS
 
 .widget-area .widget-view-profile .profile-statistics li .item-number {
   font-size: 15px;
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 600;
 }
 
@@ -2897,7 +2897,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-page-you-like {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -2979,7 +2979,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-watch-video {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -3042,7 +3042,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-advertisement {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -3054,7 +3054,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-suggested-groups {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -3147,7 +3147,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-birthday {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -3252,7 +3252,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-explore-events {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -3272,7 +3272,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-who-following {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -3328,7 +3328,7 @@ News Feed Area CSS
 }
 
 .news-feed-area .news-feed-form {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -3590,7 +3590,7 @@ News Feed Area CSS
 }
 
 .news-feed-area .news-feed-post {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -4041,6 +4041,7 @@ My Profile Area CSS
 .my-profile-inner-box .profile-info-box {
   padding: 0 50px 45px;
   position: relative;
+  background-color: #1b1c1c;
 }
 
 .my-profile-inner-box .profile-info-box .inner-info-box .info-image {
@@ -4087,7 +4088,7 @@ My Profile Area CSS
 }
 
 .my-profile-inner-box .profile-info-box .inner-info-box .info-text h3 a {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .my-profile-inner-box .profile-info-box .inner-info-box .info-text h3 a:hover {
@@ -4138,7 +4139,7 @@ My Profile Area CSS
 
 .my-profile-inner-box .profile-info-box .inner-info-box .statistics li .item-number {
   font-size: var(--font-size);
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 600;
 }
 
