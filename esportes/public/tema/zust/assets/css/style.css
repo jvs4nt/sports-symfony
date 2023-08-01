@@ -6632,7 +6632,7 @@ Favourite Area CSS
 Events Area CSS
 =================================================*/
 .events-inner-box-style {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 25px;
   border-radius: 5px;
   margin-top: 25px;
@@ -6642,6 +6642,7 @@ Events Area CSS
 .events-inner-box-style .title h3 {
   font-size: var(--font-size);
   margin-bottom: 0;
+  color: white;
 }
 
 .events-inner-box-style .events-btn .default-btn {
@@ -6670,7 +6671,7 @@ Events Area CSS
   height: 50px;
   border: none;
   border-radius: 5px;
-  background-color: #F4F7FC;
+  background-color: black;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   color: var(--paragraph-color);
@@ -6743,7 +6744,7 @@ Events Area CSS
 
 .single-events-card {
   margin-top: 25px;
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   border-radius: 5px;
   padding: 20px;
 }
@@ -6769,7 +6770,7 @@ Events Area CSS
 }
 
 .single-events-card .events-content h3 a {
-  color: var(--black-color);
+  color: white;
 }
 
 .single-events-card .events-content h3 a:hover {
@@ -6805,7 +6806,7 @@ Events Area CSS
 }
 
 .events-form {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 45px;
   margin-top: 25px;
   border-radius: 5px;
@@ -6814,6 +6815,7 @@ Events Area CSS
 .events-form h3 {
   font-size: var(--font-size);
   margin-bottom: 25px;
+  color: white;
 }
 
 .events-form .form-group {
@@ -6831,12 +6833,12 @@ Events Area CSS
 
 .events-form .form-group .form-control {
   border-radius: 5px;
-  background-color: #F4F7FC;
+  background-color: black;
   -webkit-box-shadow: unset;
           box-shadow: unset;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  border: 1px solid #F4F7FC;
+  border: 1px solid grey;
   height: 55px;
   padding: 10px 20px;
   color: var(--paragraph-color);
@@ -6895,12 +6897,12 @@ Events Area CSS
 
 .events-form .form-group .form-select {
   border-radius: 5px;
-  background-color: #F4F7FC;
+  background-color: black;
   -webkit-box-shadow: unset;
           box-shadow: unset;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  border: 1px solid #F4F7FC;
+  border: 1px solid grey;
   height: 55px;
   padding: 10px 20px;
   color: var(--paragraph-color);
