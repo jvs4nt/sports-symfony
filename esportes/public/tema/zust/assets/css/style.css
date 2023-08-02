@@ -4488,7 +4488,7 @@ My Profile Area CSS
 }
 
 .friends-inner-box-style {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 25px;
   border-radius: 5px;
 }
@@ -4563,7 +4563,7 @@ My Profile Area CSS
   height: 50px;
   border: none;
   border-radius: 5px;
-  background-color: #F4F7FC;
+  background-color: black;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   color: var(--paragraph-color);
@@ -4674,6 +4674,7 @@ My Profile Area CSS
 
 .single-friends-card .friends-content {
   padding: 0 20px 20px;
+  background-color: #1b1c1c;
 }
 
 .single-friends-card .friends-content .friends-info a img {
@@ -4693,7 +4694,7 @@ My Profile Area CSS
 }
 
 .single-friends-card .friends-content .friends-info .text h3 a {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .single-friends-card .friends-content .friends-info .text h3 a:hover {
@@ -4742,7 +4743,7 @@ My Profile Area CSS
 
 .single-friends-card .friends-content .statistics li .item-number {
   font-size: 15px;
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 600;
 }
 
@@ -4758,25 +4759,25 @@ My Profile Area CSS
 }
 
 .single-friends-card .friends-content .button-group .add-friend-btn button {
-  background-color: #F4F7FC;
-  border: 1px solid #d9dfe6;
+  background-color: var(--main-color);
+  border: 1px solid #0c420b;
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 13px;
-  color: var(--paragraph-color);
+  color: var(--white-color);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .single-friends-card .friends-content .button-group .send-message-btn button {
-  background-color: #F4F7FC;
-  border: 1px solid #d9dfe6;
+  background-color: var(--main-color);
+  border: 1px solid #0c420b;
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 13px;
-  color: var(--paragraph-color);
+  color: var(--white-color);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
