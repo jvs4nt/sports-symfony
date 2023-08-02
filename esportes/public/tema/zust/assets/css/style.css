@@ -2736,7 +2736,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-view-profile {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
           box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.1);
   padding: 20px;
@@ -2777,7 +2777,7 @@ Widget Area CSS
 }
 
 .widget-area .widget-view-profile .profile-box .text h3 a {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .widget-area .widget-view-profile .profile-box .text h3 a:hover {
@@ -2844,7 +2844,7 @@ Widget Area CSS
 
 .widget-area .widget-view-profile .profile-likes span {
   font-size: 14px;
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 600;
   position: relative;
   display: inline-block;
