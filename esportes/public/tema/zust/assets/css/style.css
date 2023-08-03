@@ -3719,8 +3719,8 @@ News Feed Area CSS
 .news-feed-area .news-feed-post .post-body .post-meta-wrap {
   margin-top: 25px;
   padding: 15px;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
   margin-bottom: 0;
 }
 
