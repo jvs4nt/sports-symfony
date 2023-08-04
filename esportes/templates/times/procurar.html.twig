@@ -1,0 +1,577 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="content-page-box-area">
+                <div class="page-banner-box bg-4">
+                    <h3>Procurar um Time</h3>
+                </div>
+
+                <div class="friends-inner-box-style d-flex justify-content-between align-items-center margin-top-25">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="friend-requests-tab" data-bs-toggle="tab" href="#friend-requests" role="tab" aria-controls="friend-requests">Times de Amigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="people-you-know-tab" data-bs-toggle="tab" href="#people-you-know" role="tab" aria-controls="people-you-know">Times da Região</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="friends-search-box">
+                        <form>
+                            <input type="text" class="input-search" placeholder="Procurar times...">
+                            <button type="submit"><i class="ri-search-line"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="friend-requests" role="tabpanel">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-1.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-2.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-3.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-4.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-5.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-6.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-7.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-8.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+
+                        <div class="load-more-posts-btn">
+                            <a href="#"><i class="flaticon-loading"></i> Load More</a>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="people-you-know" role="tabpanel">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-1.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-2.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-3.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-4.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-5.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-6.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-7.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-friends-card">
+                                    <div class="friends-image">
+                                        <a href="#">
+                                            <img src="tema/zust/assets/images/friends/friends-bg-8.jpg" alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a href="#"><i class="flaticon-user"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="friends-content">
+                                        <div class="friends-info d-flex justify-content-between align-items-center">
+                                            <a href="#">
+                                                <img src="tema/zust/assets/images/friends/friends-1.jpg" alt="image">
+                                            </a>
+                                            <div class="text ms-3">
+                                                <h3><a href="#">Barcelona Brasil</a></h3>
+                                                <span>10 participates</span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="button-group d-flex justify-content-between align-items-center">
+                                            <div class="add-friend-btn">
+                                                <button type="submit">Solicitar</button>
+                                            </div>
+                                            <div class="send-message-btn">
+                                                <button type="submit">Ver Time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+
+                        <div class="load-more-posts-btn">
+                            <a href="#"><i class="flaticon-loading"></i> Load More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% endblock %}

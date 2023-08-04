@@ -23,4 +23,12 @@ class TimesController extends AbstractController
             'controller_name' => 'TimesController',
         ]);
     }
+
+    #[Route('/procurarTime', name: 'app_procurarTime')]
+    public function procurarTime(): Response
+    {
+        return $this->render('times/procurar.html.twig', [
+            'controller_name' => 'TimesController',
+        ]);
+    }
 }
