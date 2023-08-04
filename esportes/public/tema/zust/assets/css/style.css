@@ -50,6 +50,19 @@ Default CSS
   --transition: .4s;
 }
 
+.times {
+  margin-bottom: 15px;
+  justify-content: space-around;
+}
+
+.times .default-btn {
+  width: 30% !important;
+}
+
+.times-card {
+  
+}
+
 body {
   padding: 0;
   margin: 0;

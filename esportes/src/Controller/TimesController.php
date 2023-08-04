@@ -15,4 +15,12 @@ class TimesController extends AbstractController
             'controller_name' => 'TimesController',
         ]);
     }
+
+    #[Route('/criarTime', name: 'app_criarTime')]
+    public function criarTime(): Response
+    {
+        return $this->render('times/criar.html.twig', [
+            'controller_name' => 'TimesController',
+        ]);
+    }
 }

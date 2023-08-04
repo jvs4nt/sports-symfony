@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="content-page-box-area">
+                <div class="page-banner-box bg-7">
+                    <h3>Criar um Time</h3>
+                </div>
+
+                {# <div class="events-inner-box-style d-flex justify-content-between align-items-center">
+                    <div class="title">
+                        <h3>Todos os Eventos Esportivos</h3>
+                    </div>
+                    <div class="events-btn">
+                        <a href="#" class="default-btn">Adicionar Novo Evento</a>
+                    </div>
+                    <div class="events-search-box">
+                        <form>
+                            <input type="text" class="input-search" placeholder="Procurar esportes...">
+                            <button type="submit"><i class="ri-search-line"></i></button>
+                        </form>
+                    </div>
+                </div> #}
+
+                <div class="row">
+                     <div class="col-lg-12 col-md-6">
+                        <div class="single-events-card">
+                            
+                            <div class="events-content times-card">
+                                <div class="events-footer d-flex align-items-center times">
+                                    <a href="#" class="default-btn">Procurar um novo time</a>
+                                    
+                                    <a href="#" class="default-btn">Já faço parte de um time</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <form class="events-form">
+                    <h3>Criar Novo Time</h3>
+
+                    <div class="row">
+                     <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>Nome do Time</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>Esporte</label>
+                                <select class="form-select">
+                                    <option value="1">Selecione</option>
+                                    <option value="2">Basquete</option>
+                                    <option value="3">Vôlei</option>
+                                    <option value="4">Futsal</option>
+                                    <option value="5">Handebol</option>
+                                    <option value="6">Fut-7</option>
+                                    <option value="7">Futebol de Campo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>Quantidade de Participantes (Máx. 15)</label>
+                                <select class="form-select">
+                                    <option value="0">Selecione</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label>Privacidade</label>
+                                <select class="form-select">
+                                    <option value="0">Selecione</option>
+                                    <option value="1">Time aberto</option>
+                                    <option value="2">Solicitar Entrada</option>
+                                    <option value="3">Entrar Com Senha</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <label>Descrição do Time</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12">
+                            <a type="button" class="default-btn">Criar Time</a>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+
+{% endblock %}
