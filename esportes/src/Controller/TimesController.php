@@ -31,4 +31,12 @@ class TimesController extends AbstractController
             'controller_name' => 'TimesController',
         ]);
     }
+
+    #[Route('/timePerfil', name: 'app_timePerfil')]
+    public function timePerfil(): Response
+    {
+        return $this->render('times/perfil.html.twig', [
+            'controller_name' => 'TimesController',
+        ]);
+    }
 }
