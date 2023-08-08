@@ -117,6 +117,11 @@ img {
   margin-bottom: 0;
 }
 
+.form-control {
+  background-color: black !important;
+  border: black !important;
+}
+
 /*================================================
 Main Content Wrapper Area CSS
 =================================================*/
