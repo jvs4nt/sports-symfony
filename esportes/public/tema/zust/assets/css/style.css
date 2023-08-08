@@ -6958,7 +6958,7 @@ Events Area CSS
 Live Chat Area CSS
 =================================================*/
 .live-chat-slides {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 20px;
   border-radius: 5px;
   margin-top: 25px;
@@ -6999,7 +6999,7 @@ Live Chat Area CSS
 }
 
 .live-chat-body {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 45px;
   border-radius: 5px;
   max-width: 850px;
@@ -7009,7 +7009,7 @@ Live Chat Area CSS
 .live-chat-body .live-chat-header {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--main-color);
 }
 
 .live-chat-body .live-chat-header .live-chat-info {
@@ -7061,7 +7061,7 @@ Live Chat Area CSS
 
 .live-chat-body .live-chat-header .live-chat-right li .btn i {
   display: inline-block;
-  background: #F4F7FC;
+  background: #000;
   color: var(--paragraph-color);
   height: 45px;
   width: 45px;
@@ -7104,7 +7104,7 @@ Live Chat Area CSS
   clear: both;
   word-break: break-word;
   color: var(--paragraph-color);
-  background-color: #F4F7FC;
+  background-color: black;
   border-radius: 5px;
 }
 
