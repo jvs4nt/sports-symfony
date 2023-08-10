@@ -7039,7 +7039,7 @@ Live Chat Area CSS
 }
 
 .live-chat-body .live-chat-header .live-chat-info h3 a {
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .live-chat-body .live-chat-header .live-chat-info h3 a:hover {
