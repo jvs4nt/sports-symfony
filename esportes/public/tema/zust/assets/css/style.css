@@ -123,6 +123,48 @@ img {
 }
 
 /*================================================
+Minhas alterações
+=================================================*/
+
+.col-lg-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.col-lg-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.player-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.player-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.event-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-card li {
+  margin-bottom: 5px;
+}
+
+/*================================================
 Main Content Wrapper Area CSS
 =================================================*/
 
