@@ -4247,7 +4247,7 @@ My Profile Area CSS
 }
 
 .about-personal-information {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 20px;
   border-radius: 5px;
 }
@@ -4259,6 +4259,7 @@ My Profile Area CSS
 .about-personal-information .about-header .title {
   font-size: var(--font-size);
   font-weight: 600;
+  color: white;
 }
 
 .about-personal-information .about-header .dropdown .dropdown-toggle {
