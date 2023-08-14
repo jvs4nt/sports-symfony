@@ -151,17 +151,21 @@ Time (Perfil)
 
 .player-title h2 {
   color: white;
+  margin-bottom: 20px;
 }
 
 .event-card {
   background-color: #1b1c1c;
   padding: 10px;
   margin: 10px;
+  margin-top: 55px;
   text-align: center;
+  border-radius: 2%;
 }
 
 .event-card h3 {
   color: white;
+  margin-bottom: 20px;
 }
 
 .event-card ul {
@@ -177,11 +181,13 @@ Time (Perfil)
 .event-details {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .event-details img {
   max-width: 80px;
   margin-right: 10px;
+  border-radius: 10%;
 }
 
 .event-details p {
