@@ -5718,7 +5718,7 @@ Help & Support Area CSS
 All Notifications Area CSS
 =================================================*/
 .all-notifications-body {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   padding: 45px;
   border-radius: 5px;
   max-width: 850px;
