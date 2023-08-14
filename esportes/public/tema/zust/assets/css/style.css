@@ -123,36 +123,45 @@ img {
 }
 
 /*================================================
-Minhas alterações
+Time (Perfil)
 =================================================*/
 
-.col-lg-8 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%;
-}
-
-.col-lg-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%;
-}
-
 .player-card {
-  border: 1px solid #ccc;
+  background-color: #1b1c1c;
+  display: flex;
+  align-items: center;
   padding: 10px;
   margin: 10px;
   text-align: center;
+}
+
+.player-card h4 {
+  color: white;
+  margin-left: 10px;
 }
 
 .player-card img {
-  max-width: 100px;
+  max-width: 50px;
   margin-bottom: 10px;
 }
 
+.player-title {
+  text-align: center;
+}
+
+.player-title h2 {
+  color: white;
+}
+
 .event-card {
-  border: 1px solid #ccc;
+  background-color: #1b1c1c;
   padding: 10px;
   margin: 10px;
   text-align: center;
+}
+
+.event-card h3 {
+  color: white;
 }
 
 .event-card ul {
@@ -162,6 +171,22 @@ Minhas alterações
 
 .event-card li {
   margin-bottom: 5px;
+  color: white;
+}
+
+.event-details {
+  display: flex;
+  align-items: center;
+}
+
+.event-details img {
+  max-width: 80px;
+  margin-right: 10px;
+}
+
+.event-details p {
+  margin: 0;
+  font-size: 16px;
 }
 
 /*================================================
