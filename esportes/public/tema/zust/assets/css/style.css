@@ -196,6 +196,52 @@ Time (Perfil)
 }
 
 /*================================================
+Modal (Esportes)
+=================================================*/
+
+.modal-header {
+  background-color: #1b1c1c !important;
+  
+  border-bottom: 1px solid #000000 !important;
+  border-left: 1px solid #000000 !important;
+  border-right: 1px solid #000000 !important;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modal-body {
+  background-color: #1b1c1c !important;
+  border-bottom: 1px solid #000000 !important;
+  border-left: 1px solid #000000 !important;
+  border-right: 1px solid #000000 !important;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+  width: 100%;
+  text-align: center;
+}
+
+
+.modal-footer {
+  background-color: #1b1c1c !important;
+  border-bottom: 1px solid #000000 !important;
+  border-top: 1px solid #000000 !important;
+  border-left: 1px solid #000000 !important;
+  border-right: 1px solid #000000 !important;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modal-content {
+  background-color: #1b1c1c !important;
+}
+
+.modal-title {
+  color: var(--white-color);
+  width: 100%;
+  text-align: center;
+}
+
+/*================================================
 Main Content Wrapper Area CSS
 =================================================*/
 

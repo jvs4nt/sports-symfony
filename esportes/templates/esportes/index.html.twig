@@ -37,8 +37,32 @@
                                 <p>CSU</p>
 
                                 <div class="events-footer d-flex justify-content-between align-items-center">
-                                    <a href="#" class="default-btn">Participar</a>
+                                    <a type="button" class="default-btn" data-bs-toggle="modal" data-bs-target="#myModal">Participar</a>
                                     <span>30/08</span>
+                                </div>
+
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center">Olá! Vi que deseja se inscrever no evento, mas para isso precisará de um time!</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- Conteúdo do modal aqui -->
+                                                <div class="events-content times-card">
+                                                    <div class="events-footer d-flex align-items-center times">
+                                                        <a href="/procurarTime" class="default-btn">Procurar um novo time</a>
+                                                        <a href="/criarTime" class="default-btn">Criar um novo time</a>
+                                                        <a href="/timePerfil" class="default-btn">Já faço parte de um time</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -240,5 +264,8 @@
                     </div>
                 </form>
             </div>
+
+            
+
 
 {% endblock %}
