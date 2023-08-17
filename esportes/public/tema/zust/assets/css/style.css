@@ -241,6 +241,17 @@ Modal (Esportes)
   text-align: center;
 }
 
+.modal-body .events-content .modal-btn .default-btn {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 5px 20px;
+  font-size: 13px;
+  border-radius: 5px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
 /*================================================
 Main Content Wrapper Area CSS
 =================================================*/
