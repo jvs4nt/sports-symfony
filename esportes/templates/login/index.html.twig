@@ -29,7 +29,7 @@
                                         <a href="/password" class="lost-your-password">Esqueceu sua senha?</a>
                                     </div>
                                 </div>
-                                <a href="/feed" style="margin-bottom: 15px;" onclick="exibirDados()" type="button" class="default-btn">Login</a>
+                                <a href="#" style="margin-bottom: 15px;" onclick="login()" type="button" class="default-btn">Login</a>
                             
                                 <a href="/cadastro" type="button" class="google-btn">Cadastre-se</a>
                                 
@@ -45,10 +45,29 @@
         </div>
 
         <script>
-            function exibirDados() {
+            function login() {
                
                 var email = document.getElementById('email').value;
                 var senha = document.getElementById('senha').value;
+                var url = "http://localhost/laravel-jwt/public/index.php/api/login";
+                var dados = {
+                    email: email,
+                    password: senha
+                };
+
+                $.post(url, dados, function(retorno){
+                    console.log(retorno);
+
+                    localStorage.setItem('token', retorno.authorisation.token);
+                    localStorage.setItem('name', retorno.user.name);
+                    localStorage.setItem('email', retorno.user.email);
+
+                    console.log('Token armazenado no localStorage:', localStorage.getItem('token'));
+                    console.log('Nome armazenado no localStorage:', localStorage.getItem('name'));
+                    console.log('Email armazenado no localStorage:', localStorage.getItem('email'));
+                })
+
+
 
                 console.log('Email:', email);
                 console.log('Senha:', senha);

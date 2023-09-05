@@ -20,7 +20,7 @@
                                 </div>
         
                                 <div class="form-group">
-                                    <label>Senha</label>
+                                    <label>Senha (mínimo 6 dígitos)</label>
                                     <input style="background-color: black; border:none;" id="senha" name="senha" type="password" class="form-control">
                                 </div>
 
@@ -35,7 +35,7 @@
                                         <label for="test1">Eu aceito os <a href="privacy.html">Termos e Condições</a></label>
                                     </p>
                                 </div>
-                                <a type="button" onclick="exibirDados()" class="default-btn">Registrar</button>
+                                <a type="button" onclick="cadastrar()" class="default-btn">Registrar</button>
                                 <a href="/login" type="button" class="default-btn">Voltar</a>
                                 
                             </form>
@@ -49,13 +49,19 @@
             </div>
         </div>
         <script>
-            function exibirDados() {
+            function cadastrar() {
                 
                 console.log("-")
                 var nome = document.getElementById('nome').value;
                 var email = document.getElementById('email').value;
                 var senha = document.getElementById('senha').value;
                 var confirmar = document.getElementById('confirmar').value;
+                var url = "http://localhost/laravel-jwt/public/index.php/api/register";
+                var dados = {
+                    name: nome,
+                    email: email,
+                    password: senha
+                };
 
                 console.log('Nome:', nome);
                 console.log('Email:', email);
@@ -64,6 +70,18 @@
 
                 if (senha != confirmar) {
                     console.log("A confirmação de senha não está correta")
+                } else {
+                    $.post(url, dados, function(retorno){
+                    console.log(retorno);
+
+                    localStorage.setItem('token', retorno.authorisation.token);
+                    localStorage.setItem('name', retorno.user.name);
+                    localStorage.setItem('email', retorno.user.email);
+
+                    console.log('Token armazenado no localStorage:', localStorage.getItem('token'));
+                    console.log('Nome armazenado no localStorage:', localStorage.getItem('name'));
+                    console.log('Email armazenado no localStorage:', localStorage.getItem('email'));
+                })
                 }
 
             }
