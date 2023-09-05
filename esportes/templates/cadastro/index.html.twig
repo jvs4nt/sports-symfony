@@ -69,7 +69,7 @@
                 console.log('Confirmação:', confirmar);
 
                 if (senha != confirmar) {
-                    console.log("A confirmação de senha não está correta")
+                    alert("A confirmação de senha não está correta")
                 } else {
                     $.post(url, dados, function(retorno){
                     console.log(retorno);
@@ -81,6 +81,10 @@
                     console.log('Token armazenado no localStorage:', localStorage.getItem('token'));
                     console.log('Nome armazenado no localStorage:', localStorage.getItem('name'));
                     console.log('Email armazenado no localStorage:', localStorage.getItem('email'));
+
+                    setTimeout(() => {
+                        window.location.href = "/login";
+                    }, 2000);
                 })
                 }
 
