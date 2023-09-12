@@ -18,7 +18,17 @@
                                     <label>Email</label>
                                     <input style="background-color: black; border:none;" id="email" name="email" type="email" class="form-control">
                                 </div>
-        
+
+                                <div class="form-group">
+                                    <label>CPF</label>
+                                    <input style="background-color: black; border:none;" id="cpf" name="cpf" type="cpf" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Idade</label>
+                                    <input style="background-color: black; border:none;" id="idade" name="idade" type="idade" class="form-control">
+                                </div>
+
                                 <div class="form-group">
                                     <label>Senha (mínimo 6 dígitos)</label>
                                     <input style="background-color: black; border:none;" id="senha" name="senha" type="password" class="form-control">
@@ -54,17 +64,23 @@
                 console.log("-")
                 var nome = document.getElementById('nome').value;
                 var email = document.getElementById('email').value;
+                var cpf = document.getElementById('cpf').value;
+                var idade = document.getElementById('idade').value;
                 var senha = document.getElementById('senha').value;
                 var confirmar = document.getElementById('confirmar').value;
                 var url = "http://localhost/laravel-jwt/public/index.php/api/register";
                 var dados = {
                     name: nome,
                     email: email,
+                    cpf: cpf,
+                    idade: idade,
                     password: senha
                 };
 
                 console.log('Nome:', nome);
                 console.log('Email:', email);
+                console.log('CPF:', cpf);
+                console.log('Idade:', idade, 'anos');
                 console.log('Senha:', senha);
                 console.log('Confirmação:', confirmar);
 
