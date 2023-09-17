@@ -4380,6 +4380,7 @@ My Profile Area CSS
   background-color: #1b1c1c;
   padding: 20px;
   border-radius: 5px;
+  margin-top: 25px;
 }
 
 .about-personal-information .about-header {
@@ -5448,7 +5449,7 @@ Setting Area CSS
 }
 
 .account-setting-notification {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   border-radius: 5px;
   padding: 45px;
   margin-top: 25px;
@@ -5551,7 +5552,7 @@ Setting Area CSS
 }
 
 .account-setting-message {
-  background-color: var(--white-color);
+  background-color: #1b1c1c;
   border-radius: 5px;
   padding: 45px;
   margin-top: 25px;

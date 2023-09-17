@@ -52,9 +52,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" id="timeline-tab" data-bs-toggle="tab" href="#timeline" role="tab" aria-controls="timeline">Timeline</a>
                                 </li>
-        
+
                                 <li class="nav-item">
-                                    <a class="nav-link" id="about-tab" data-bs-toggle="tab" href="#about" role="tab" aria-controls="about">Sobre mim</a>
+                                    <a class="nav-link" id="profile-information-tab" data-bs-toggle="tab" href="#profile-information" role="tab" aria-controls="profile-information">Meus dados</a>
                                 </li>
         
                                 <li class="nav-item">
@@ -905,100 +905,89 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="about" role="tabpanel">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="about-personal-information">
-                                    <div class="about-header d-flex justify-content-between align-items-center">
-                                        <div class="title">Sobre mim:</div>
+                    <div class="tab-pane fade show active" id="profile-information" role="tabpanel">
+                        <form class="account-setting-form">
+                            <h3 style="color: aliceblue;">Informações Pessoais</h3>
 
-                                        <div class="dropdown">
-                                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-menu"></i></button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-edit"></i> Edit Information</a></li>
-                                               
-                                                <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-trash"></i> Delete Information</a></li>
-                                            </ul>
-                                        </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input style="background-color: black; border:none;" id="nome" name="nome" type="text" class="form-control" placeholder="Digite seu nome completo">
                                     </div>
-
-                                    <ul class="information-list">
-                                        <li>
-                                            <span>Email:</span> joaovit342@gmail.com
-                                        </li>
-                                        <li>
-                                            <span>Idade:</span> 19 anos
-                                        </li>
-                                        <li>
-                                            <span>Esporte Favorito:</span> Futebol
-                                        </li>
-                                        <li>
-                                            <span>Cidade:</span> Francisco Morato
-                                        </li>
-                                        <li>
-                                            <span>Telefone:</span> (11)12345-6789
-                                        </li>
-                                        <li>
-                                            <span>Sexo:</span> Masculino
-                                        </li>
-                                        
-                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input style="background-color: black; border:none;" id="email" name="email" type="email" class="form-control" placeholder="Digite seu email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>CPF</label>
+                                        <input style="background-color: black; border:none;" id="cpf" name="cpf" type="email" class="form-control" placeholder="Digite seu CPF">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Data de Nascimento</label>
+                                        <input style="background-color: black; border:none;" id="data" name="data" type="text" class="form-control" placeholder="dd/mm/aaaa" id="datepicker">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Telefone Celular</label>
+                                        <input style="background-color: black; border:none;" id="telefone" name="telefone" type="number" class="form-control" placeholder="Digite seu telefone">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Gênero</label>
+                                        <select style="background-color: black; border:none;" id="genero" name="genero" class="form-select">
+                                            <option selected="1">Selecione o gênero</option>
+                                            <option value="2">Masculino</option>
+                                            <option value="3">Feminino</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <h3 style="color: aliceblue; margin-top:20px;">Endereço</h3>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Estado</label>
+                                        <select style="background-color: black; border:none;" id="estado" name="estado" class="form-select">
+                                            <option selected="1">Selecione o estado</option>
+                                            <option value="2">SP</option>
+                                            <option value="3">RJ</option>
+                                            <option value="4">MG</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Cidade</label>
+                                        <input style="background-color: black; border:none;" id="cidade" name="cidade" type="text" class="form-control" placeholder="Digite sua cidade">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Bairro</label>
+                                        <input style="background-color: black; border:none;" id="bairro" name="bairro" type="text" class="form-control" placeholder="Digite seu bairro">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Rua</label>
+                                        <input style="background-color: black; border:none;" id="bairro" name="bairro" type="text" class="form-control" placeholder="Digite sua rua">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" onclick="exibirDados()" class="default-btn">Save</button>
                                 </div>
                             </div>
-
-                            {# <div class="col-lg-9 col-md-12">
-                                <div class="about-details-information">
-                                    <div class="information-box-content">
-                                        <div class="information-header d-flex justify-content-between align-items-center">
-                                            <div class="title">About Me!</div>
-    
-                                            <div class="dropdown">
-                                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-menu"></i></button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-edit"></i> Edit Information</a></li>
-                                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-private"></i> Hide Information</a></li>
-                                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-trash"></i> Delete Information</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <p>Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula. Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed porttitor lectus nibh.</p>
-                                            <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla porttitor accumsan tincidunt. Quisque velit nisi pretium ut lacinia in elementum id enim. Donec rutrum congue leo eget malesuada. Quisque velit nisi pretium ut lacinia in elementum id enim. Vivamus magna justo lacinia eget consectetur sed convallis at tellus.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="information-box-content">
-                                        <div class="information-header d-flex justify-content-between align-items-center">
-                                            <div class="title">Interests</div>
-    
-                                            <div class="dropdown">
-                                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-menu"></i></button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-edit"></i> Edit Information</a></li>
-                                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-private"></i> Hide Information</a></li>
-                                                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="flaticon-trash"></i> Delete Information</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="box-content">
-                                            <p class="designation">Hobbies:</p>
-                                            <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla porttitor accumsan tincidunt. Quisque velit nisi pretium ut lacinia in elementum id enim. Donec rutrum congue leo eget malesuada. Quisque velit nisi pretium ut lacinia in elementum id enim. Vivamus magna justo lacinia eget consectetur sed convallis at tellus.</p>
-                                        </div>
-
-                                        <div class="box-content">
-                                            <p class="designation">Favourite Books:</p>
-                                            <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla porttitor accumsan tincidunt. Quisque velit nisi pretium ut lacinia in elementum id enim. Donec rutrum congue leo eget malesuada. Quisque velit nisi pretium ut lacinia in elementum id enim. Vivamus magna justo lacinia eget consectetur sed convallis at tellus.</p>
-                                        </div>
-
-                                        <div class="box-content">
-                                            <p class="designation">Others Interests:</p>
-                                            <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla porttitor accumsan tincidunt. Quisque velit nisi pretium ut lacinia in elementum id enim. Donec rutrum congue leo eget malesuada. Quisque velit nisi pretium ut lacinia in elementum id enim. Vivamus magna justo lacinia eget consectetur sed convallis at tellus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>   #}
-                        </div>
+                        </form>
                     </div>
+
 
                     <div class="tab-pane fade" id="friends" role="tabpanel">
                         <div class="friends-inner-box-style d-flex justify-content-between align-items-center">
@@ -3075,5 +3064,30 @@
                     </div>
                 </div>
             </div>
+        <script>
+            function exibirDados() {
+                
+                console.log("-")
+                var nome = document.getElementById('nome').value;
+                var email = document.getElementById('email').value;
+                var cpf = document.getElementById('cpf').value;
+                var data = document.getElementById('data').value;
+                var telefone = document.getElementById('telefone').value;
+                var genero = document.getElementById('genero').value;
+                var estado = document.getElementById('estado').value;
+                var cidade = document.getElementById('cidade').value;
+                var bairro = document.getElementById('bairro').value;
 
+                console.log('Nome:', nome);
+                console.log('Email:', email);
+                console.log('CPF:', cpf);
+                console.log('Data de nascimento:', data);
+                console.log('Telefone:', telefone);
+                console.log('Gênero:', genero);
+                console.log('Estado:', estado);
+                console.log('Cidade:', cidade);
+                console.log('Bairro:', bairro);
+
+            }
+        </script>
 {% endblock %}
