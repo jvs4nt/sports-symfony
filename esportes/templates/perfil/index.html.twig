@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="info-text ms-3">
-                                <h3><a href="#">João Santos</a></h3>
+                                <h3><a href="#" class="nomeUsuario">joao</a></h3>
                                 <span><a href="mailto:matthew@gmail.com">joao@teste.com</a></span>
                             </div>
                             <ul class="statistics">
@@ -982,7 +982,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
-                                    <button type="submit" onclick="exibirDados()" class="default-btn">Save</button>
+                                    <button type="submit" onclick="salvarDados()" class="default-btn">Save</button>
                                 </div>
                             </div>
                         </form>
@@ -3065,7 +3065,7 @@
                 </div>
             </div>
         <script>
-            function exibirDados() { 
+            function salvarDados() { 
                 
                 console.log("-")
                 var nome = document.getElementById('nome').value;
@@ -3087,9 +3087,25 @@
                 console.log('Estado:', estado);
                 console.log('Cidade:', cidade);
                 console.log('Bairro:', bairro);
+
+                
             }
 
-            const userId = localStorage.getItem('id');
-            console.log(userId)
+            function recuperarDados() {
+
+                const userId = localStorage.getItem('id');
+                const token = localStorage.getItem('token');
+                console.log(userId)
+
+                var url = "http://localhost/laravel-jwt/public/index.php/api/recuperar-dados/" + userId + "?token=" + token;
+
+                $.get(url, function(retorno){
+                    console.log(retorno);
+                })
+            }
+
+            recuperarDados();
+
+            
         </script>
 {% endblock %}
