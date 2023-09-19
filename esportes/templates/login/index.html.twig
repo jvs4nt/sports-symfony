@@ -40,7 +40,7 @@
             </div>
 
             <div class="home-btn-icon">
-                <a href="index.html"><i class="flaticon-home"></i></a>
+                <a href="/feed"><i class="flaticon-home"></i></a>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
                
                 var email = document.getElementById('email').value;
                 var senha = document.getElementById('senha').value;
-                var url = "http://localhost/laravel-jwt/public/index.php/api/login";
+                var url = "http://192.168.18.13/laravel-jwt/public/index.php/api/login";
                 var dados = {
                     email: email,
                     password: senha
@@ -61,15 +61,17 @@
                     localStorage.setItem('token', retorno.authorisation.token);
                     localStorage.setItem('name', retorno.user.name);
                     localStorage.setItem('email', retorno.user.email);
+                    localStorage.setItem('id', retorno.user.id);
 
+                    console.log('ID armazenado no localStorage:', localStorage.getItem('id'));
                     console.log('Token armazenado no localStorage:', localStorage.getItem('token'));
                     console.log('Nome armazenado no localStorage:', localStorage.getItem('name'));
                     console.log('Email armazenado no localStorage:', localStorage.getItem('email'));
 
-                    setTimeout(() => {
-                        window.location.href = "/feed";
+                   setTimeout(() => {
+                        window.location.href = "/perfil";
                     }, 1000);
-
+                
                 })
 
 
