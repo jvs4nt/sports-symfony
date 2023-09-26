@@ -913,7 +913,7 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <label>Nome</label>
-                                        <input style="background-color: black; border:none;" id="nome" name="nome" type="text" class="form-control" placeholder="Digite seu nome completo">
+                                        <input style="background-color: black; border:none;" id="nome" name="nome" type="text" class="form-control nome" placeholder="Digite seu nome completo">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
@@ -931,7 +931,7 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <label>Data de Nascimento</label>
-                                        <input style="background-color: black; border:none;" id="data" name="data" type="text" class="form-control" placeholder="dd/mm/aaaa" id="datepicker">
+                                        <input style="background-color: black; border:none;" id="data" name="data" type="text" class="form-control" placeholder="dd/mm/aaaa">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
@@ -944,9 +944,9 @@
                                     <div class="form-group">
                                         <label>Gênero</label>
                                         <select style="background-color: black; border:none;" id="genero" name="genero" class="form-select">
-                                            <option selected="1">Selecione o gênero</option>
-                                            <option value="2">Masculino</option>
-                                            <option value="3">Feminino</option>
+                                            <option selected="0">Selecione o gênero</option>
+                                            <option value="M">Masculino</option>
+                                            <option value="F">Feminino</option>
                                           </select>
                                     </div>
                                 </div>
@@ -955,10 +955,10 @@
                                     <div class="form-group">
                                         <label>Estado</label>
                                         <select style="background-color: black; border:none;" id="estado" name="estado" class="form-select">
-                                            <option selected="1">Selecione o estado</option>
-                                            <option value="2">SP</option>
-                                            <option value="3">RJ</option>
-                                            <option value="4">MG</option>
+                                            <option selected="0">Selecione o estado</option>
+                                            <option value="SP">SP</option>
+                                            <option value="RJ">RJ</option>
+                                            <option value="MG">MG</option>
                                           </select>
                                     </div>
                                 </div>
@@ -978,11 +978,11 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <label>Rua</label>
-                                        <input style="background-color: black; border:none;" id="bairro" name="bairro" type="text" class="form-control" placeholder="Digite sua rua">
+                                        <input style="background-color: black; border:none;" id="rua" name="rua" type="text" class="form-control" placeholder="Digite sua rua">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
-                                    <button type="submit" onclick="salvarDados()" class="default-btn">Save</button>
+                                    <button onclick="salvarDados()" class="default-btn">Save</button>
                                 </div>
                             </div>
                         </form>
@@ -3077,18 +3077,32 @@
                 var estado = document.getElementById('estado').value;
                 var cidade = document.getElementById('cidade').value;
                 var bairro = document.getElementById('bairro').value;
+                var rua = document.getElementById('rua').value;
 
-                console.log('Nome:', nome);
-                console.log('Email:', email);
-                console.log('CPF:', cpf);
-                console.log('Data de nascimento:', data);
-                console.log('Telefone:', telefone);
-                console.log('Gênero:', genero);
-                console.log('Estado:', estado);
-                console.log('Cidade:', cidade);
-                console.log('Bairro:', bairro);
+                const userId = localStorage.getItem('id');
+                const token = localStorage.getItem('token');
+                console.log(userId);
+                console.log(token);
+                var dados = {
+                    name: nome,
+                    email: email,
+                    cpf: cpf,
+                    birthdate: data,
+                    telefone: telefone,
+                    genero: genero,
+                    estado: estado,
+                    cidade: cidade,
+                    bairro: bairro,
+                    rua: rua,
+                }
 
-                
+                console.log(dados);
+
+                var url = "http://localhost/laravel-jwt/public/index.php/api/user/editar/" + userId + "?token=" + token;
+
+                $.post(url, dados, function(retorno){
+                    console.log(retorno);
+                })
             }
 
             function recuperarDados() {
@@ -3098,10 +3112,12 @@
                 console.log(userId);
                 console.log(token);
 
-                var url = "http://localhost/laravel-jwt/public/index.php/api/recuperar-dados/" + userId + "?token=" + token;
+                var url = "http://localhost/laravel-jwt/public/index.php/api/user/recuperar/" + userId + "?token=" + token;
 
                 $.get(url, function(retorno){
                     console.log(retorno);
+                    $(".nome").val(retorno.name)
+
                 })
             }
 
