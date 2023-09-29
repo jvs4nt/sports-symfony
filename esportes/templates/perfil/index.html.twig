@@ -80,7 +80,6 @@
 
     <div class="tab-content" id="myTabContent">
         <a class="tab-pane fade show active timeline" id="timeline" role="tabpanel">
-          
             <h3>Carregando...</h3>
         </a>
 
@@ -100,8 +99,7 @@
                 $.post("/timeline", function(retorno){
                     $("#timeline").html(retorno);
                 })   
-
-    
+                
                 } );
             })
 

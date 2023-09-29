@@ -12,7 +12,7 @@ class PerfilController extends AbstractController
     public function index(): Response
     {
        $params = [
-        "url" => "http://localhost/laravel-jwt/public/index.php/api/login", 
+        "url" => "http://127.0.0.1:8000/api/login", 
         "dados" => [
             "email" => "admin@admin",
             "password" => "admin123"

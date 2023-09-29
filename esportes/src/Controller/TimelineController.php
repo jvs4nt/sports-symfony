@@ -15,11 +15,4 @@ class TimelineController extends AbstractController
             'controller_name' => 'TimelineController',
         ]);
     }
-    #[Route('/fotos', name: 'app_timeline')]
-    public function fotos(): Response
-    {
-        return $this->render('timeline/timeline.html.twig', [
-            'controller_name' => 'TimelineController',
-        ]);
-    }
 }
